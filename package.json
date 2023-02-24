@@ -1,0 +1,23 @@
+{
+  "name": "fs-blog-novice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon --ignore 'blogPosts.json' index.js"
+  },
+  "keywords": [],
+  "author": "Daniel Gaviria",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "flag-icons": "^6.6.6",
+    "lowdb": "^5.1.0"
+  },
+  "type": "module"
+}

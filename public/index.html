@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>My Thoughts App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./stylesheets/main.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+/>
+  </head>
+  <body>
+    <header class='header'>
+      <h1 class='title'>Thoughts to Words App</h1>
+      <div class='flagContainer'>
+        <span id='en' class='fi fi-us'></span>
+        <span id='sp' class='fi fi-es'></span>
+      </div>
+    </header>
+    <div class='container'>
+        <form class='formContainer' id='blogPost'>
+          <label for="author">Author:</label>
+          <input type='text' id='author' name='post_author' placeholder='Enter your name' required>
+          <label for="title">Title of post:</label>
+          <input type='text' id='title' name='post_title' placeholder='Title of post' required>
+          <label for="body">What do you want to say?</label>
+          <textarea id='body' name='post_content' placeholder='Text of post' required></textarea>
+          <input type='submit' id='btn' value='save your post'><br>
+        </form>
+        <div class='outputContainer'>
+          <div class='blogPostContainer'>
+          </div>
+        </div>    
+    </div>    
+    <footer class='footer'>
+      <p id='li-message'>Application developed by <b>Daniel Gaviria</b> 
+        <span>
+          <a href='https://www.linkedin.com/in/daniel-gaviria-dev/' target='_blank'>
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </span>
+      </p> 
+      <p id='gh-message'>See the code of this application at 
+        <span>
+          <a href='#'>
+            <i class="bi bi-github"></i>
+        </a>
+        </span>
+      </p> 
+      
+    </footer>
+    <script src='./app.js' type='module'></script>
+  </body>
+</html>
+

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b3cde0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*styles for the header*/
+.header {
+  display: flex;
+
+  background-color: #011f4b;
+  height: 8vh;
+  width: 100%;
+  padding: 0;
+  color: white;
+}
+
+.flagContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 6.5em;
+}
+
+.flagContainer span {
+  width: 5vh;
+  background-size: cover;
+  border-radius: 50%;
+  line-height: 2.5em;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+}
+
+/*styles for the footer*/
+
+.footer {
+  background-color: #011f4b;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  color: white;
+}
+
+.footer i {
+  font-size: 2em;
+  color: #ae5a41;
+  vertical-align: middle;
+}
+
+.footer a {
+  margin-left: 1em
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin: 2em;
+  border-radius: 20px;
+  padding: 1em;
+  color: white;
+  background-color: #03396c;
+}
+
+/*form styles*/
+
+.formContainer {
+  grid-column: 1;
+  padding: 0.5em;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  color: black;
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+  border-radius: 0.5em;
+  height: 5vh;
+  width: 50%;
+  padding; 1em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+  font-family: 'Raleway', sans-serif;
+  border: #c3cb71 solid;
+}
+
+textarea {
+  border-radius: 1em;
+  width: 100%;
+  height: 500px;
+  padding: 0.5em;
+  resize: none;
+  font-size: 16px;
+  margin-bottom: 1em;
+  font-family: 'Raleway', sans-serif;
+  border: #c3cb71 solid;
+}
+
+#btn {
+  display: block;
+  border-radius: 0.5em;
+  margin: auto;
+  height: 5vh;
+  width: 25%;
+  font-size: 0.7em;
+  transition-duration: 0.5s;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+#btn:hover {
+  background-color: #9b9fab;
+  color: white;
+}
+
+/*blog output styles*/
+
+.outputContainer {
+  color: #293452;
+  grid-column: 2;
+  max-width: 100%;
+}
+
+.blogPostContainer {
+  display: flex;
+  gap: 5px;
+  flex-flow: row wrap;
+}
+
+.postCardContainer{
+  background-color: rgb(240 240 240);
+  width: 33%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*styles for post title container*/
+.postTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3em;
+  background-color: #c3cb71;
+  border-radius: 10px 10px 0 0;
+  overflow-y: clip;
+}
+
+.postTitle {
+  margin: 0;
+}
+
+/*styles for post body*/
+.postBodyContainer {
+  overflow-y: auto;
+  height: 10em;
+}
+
+.postAuthor {
+  margin: 0;
+  text-align: end;
+  padding: 1vmin 1vmin 0 0;
+}
+
+.postText {
+  margin: 0;
+  padding: 1vmin;
+}
+
+/*styles for the post button container*/
+.postButtonsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  background-color: #c3cb71;
+  border-radius: 0 0 10px 10px;
+}
+
+.cardBtn {
+  width: 5vw;
+  height: 1.5vw;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  transition-duration: 0.5s;
+}
+
+.cardBtn:hover {
+  background-color: #9b9fab;
+  color: white;
+}
